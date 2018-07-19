@@ -8,6 +8,7 @@ iris = datasets.load_iris()
 data = iris.data;
 label = iris.target;
 
+print(iris.DESCR)
 X_train, X_test, y_train, y_test = train_test_split(data,label,test_size = 0.4)
 
 net = perceptron.Perceptron(n_iter=100, eta0=0.002)
